@@ -1,0 +1,8 @@
+---
+beet_root: "home/ubuntu/workspace"
+beet_project: drupal
+drupal_create_makefile: yes
+drupal_build_makefile: yes
+drupal_install_site: yes
+drupal_account_name: admin
+drupal_account_pass: admin
