@@ -1,6 +1,6 @@
-# Ansible Role: Beetbox Slim
+# Ansible Role: Beetbox Drupal
 
-An Ansible role that creates a Slim project on beetbox.
+An Ansible role that creates a Drupal project on beetbox.
 
 ## Requirements
 
