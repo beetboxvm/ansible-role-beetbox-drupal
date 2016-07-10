@@ -1,5 +1,9 @@
 ---
-beet_root: "home/ubuntu/drupal-composer"
+beet_domain: "drupal.local"
+beet_root: "{{ beet_base }}/docroot"
+role_path: "{{ beet_home }}/provisioning/ansible/roles/beetboxvm.drupal"
+
+
 beet_project: drupal
 beet_web: "{{ beet_root }}/web"
 drupal_build_composer: yes

@@ -1,5 +1,8 @@
 ---
-beet_root: "home/ubuntu/workspace"
+beet_domain: "drupal.local"
+beet_root: "{{ beet_base }}/docroot"
+role_path: "{{ beet_home }}/provisioning/ansible/roles/beetboxvm.drupal"
+
 beet_project: drupal
 drupal_create_makefile: yes
 drupal_build_makefile: yes
