@@ -1,4 +1,5 @@
 ---
+beet_mysql_server: localhost
 drupal_install_profile: standard
 drupal_enable_modules: []
 drupal_account_name: admin
