@@ -7,7 +7,7 @@ machine:
     ROLE_NAME: "beetboxvm.drupal"
 dependencies:
   override:
-    - git clone $BEET_REPO && sudo mv beetbox /
+    - git clone $BEET_REPO --recursive && sudo mv beetbox /
     - sudo rm -rf /beetbox/provisioning/ansible/roles/$ROLE_NAME
     - sudo ln -s ~/$CIRCLE_PROJECT_REPONAME /beetbox/provisioning/ansible/roles/$ROLE_NAME
     - sudo mkdir -p $BEET_BASE/.beetbox
