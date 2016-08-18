@@ -22,4 +22,4 @@
   command: >
     {{ drush_path }} pm-enable -y {{ drupal_enable_modules | join(" ") }}
     chdir={{ beet_web }}
-  when: "'Successful' not in drupal_site_installed.stdout"
+  when: "drupal_enable_modules|length > 0"
