@@ -44,7 +44,7 @@ Build a make file.
 
 The make file to build.
 
-    drupal_make_core_branch: "8.2.x"
+    drupal_make_core_branch: "8.3.x"
 
 Default core branch.
 
