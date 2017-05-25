@@ -46,6 +46,10 @@ The make file to build.
 
     drupal_make_core_branch: "8.3.x"
 
+Arguments to pass to drush make.
+
+    drupal_make_args: no
+
 Default core branch.
 
     drupal_distro: no

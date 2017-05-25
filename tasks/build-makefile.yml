@@ -8,7 +8,7 @@
 
 - name: Generate Drupal site with drush makefile.
   command: >
-    {{ drush_path }} make -y {{ drupal_makefile_path }} {% if drupal_make_no_gitinfofile %}--no-gitinfofile{% endif %} {% if drupal_distro %}--no-recursion{% endif %}
+    {{ drush_path }} make -y {{ drupal_makefile_path }} {% if drupal_make_args %}{{ drupal_make_args }}{% endif %}
     chdir={{ beet_root }}
   when: not drupal_site.stat.exists
   become: no
@@ -43,7 +43,7 @@
 
 - name: Build distribution profile makefile.
   command: >
-    {{ drush_path }} make -y {{ drupal_distro_makefile }} {% if drupal_make_no_gitinfofile %}--no-gitinfofile{% endif %} --no-core --contrib-destination=./
+    {{ drush_path }} make -y {{ drupal_distro_makefile }} {% if drupal_make_args %}{{ drupal_make_args }}{% endif %}
     chdir={{ beet_root }}/profiles/{{ drupal_distro }}
   when: not drupal_site.stat.exists and drupal_distro
   become: no
