@@ -10,6 +10,7 @@ drupal_build_makefile: no
 drupal_makefile_path: "~/beetbox.make.yml"
 drupal_make_core_branch: "8.3.x"
 drupal_make_working_copy: "false"
+drupal_make_no_gitinfofile: yes
 drupal_distro: no
 drupal_distro_makefile: /vagrant/drupal-org.make.yml
 drupal_build_composer: no
