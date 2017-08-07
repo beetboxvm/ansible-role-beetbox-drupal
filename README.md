@@ -79,6 +79,7 @@ https://github.com/beetboxvm/beetbox
 
 ## Requirements
 
+* [Composer](https://getcomposer.org/download/)
 * [Vagrant](https://www.vagrantup.com/) >= 1.8
 * [Virtualbox](https://www.virtualbox.org/)
 * [Vagrant Hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
@@ -90,6 +91,7 @@ https://github.com/beetboxvm/beetbox
 
   ```
   git clone https://github.com/beetboxvm/ansible-role-beetbox-drupal.git drupal && cd $_
+  composer require --dev beet/box
   vagrant up
   ```
 

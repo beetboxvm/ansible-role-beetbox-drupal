@@ -14,4 +14,4 @@
   command: >
     {{ composer_path }} require {{ item }}
     chdir={{ beet_root }}
-  with_items: drupal_composer_dependencies
+  with_items: "{{ drupal_composer_dependencies }}"
