@@ -5,6 +5,7 @@ drupal_enable_modules: []
 drupal_account_name: admin
 drupal_account_pass: admin
 drupal_install_site: no
+drupal_install_site_args: ''
 drupal_create_makefile: no
 drupal_build_makefile: no
 drupal_makefile_path: "~/beetbox.make.yml"

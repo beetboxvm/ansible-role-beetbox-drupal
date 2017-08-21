@@ -14,6 +14,7 @@
     --account-name={{ drupal_account_name }}
     --account-pass={{ drupal_account_pass }}
     --db-url=mysql://{{ beet_mysql_user }}:{{ beet_mysql_password }}@{{ beet_mysql_server }}/{{ beet_mysql_database }}
+    {{ drupal_install_site_args }}
     chdir={{ beet_web }}
   notify: restart webserver
   when: "'Successful' not in drupal_site_installed.stdout"
