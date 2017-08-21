@@ -7,5 +7,6 @@ beet_project: drupal
 drupal_create_makefile: yes
 drupal_build_makefile: yes
 drupal_install_site: yes
+drupal_install_site_args: "install_configure_form.enable_update_status_module=NULL install_configure_form.enable_update_status_emails=NULL"
 drupal_account_name: admin
 drupal_account_pass: admin
