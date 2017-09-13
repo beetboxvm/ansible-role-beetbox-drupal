@@ -19,6 +19,7 @@
   register: composer_file
 - composer:
     command: install
+    no_dev: no
     working_dir: "{{ beet_root }}"
   become: no
   when: composer_file.stat.exists
