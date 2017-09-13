@@ -9,7 +9,7 @@ drupal_install_site_args: ''
 drupal_create_makefile: no
 drupal_build_makefile: no
 drupal_makefile_path: "~/beetbox.make.yml"
-drupal_make_core_branch: "8.4.x"
+drupal_make_core_branch: "8.5.x"
 drupal_make_working_copy: "false"
 drupal_make_args: no
 drupal_distro: no
